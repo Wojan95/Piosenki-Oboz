@@ -43,6 +43,58 @@ p {
 
     font-family: 'Poppins', sans-serif;
 }
+
+
+button {
+    background: linear-gradient(45deg, #ff4d4d, #ff9900);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    display: block;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 100, 100, 0.7);
+    text-align: center;
+    
+}
+
+button:hover {
+    transform: scale(0.95);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button {
+    animation: slideIn 1s  ease-in-out forwards;
+
+    animation-delay: var(--delay);
+
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-300px);
+
+
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+
+        opacity: 1;
+    }
+}
 .inline {
     display: inline;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
 }
